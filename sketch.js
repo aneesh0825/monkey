@@ -32,8 +32,9 @@ function setup() {
   player = createSprite(100,340,20,50);
   player.addAnimation("Running",player_running);
   player.scale = 0.1;
-  
-  ground = createSprite(400,350,800,10);
+  camera.position.x=player.x;
+  camera.position.y=200;
+  ground = createSprite(100,350,1200,10);
   ground.velocityX=-4;
   ground.x=ground.width/2;
   ground.visible=false;
@@ -91,7 +92,7 @@ function draw() {
   stroke("white");
   textSize(20);
   fill("white");
-  text("Score: "+ score, 500,50);
+  text("Score: "+ score, 100,50);
 }
 
 function spawnFood() {
