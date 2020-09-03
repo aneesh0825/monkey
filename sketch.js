@@ -53,8 +53,8 @@ function draw() {
   if(ground.x<0) {
     ground.x=ground.width/2;
   }
-  if(backgr.x<100){
-    backgr.x=backgr.width/2;
+  if(backgr.x<0){
+    backgr.x=backgr.width/2-150;
   }
   
     if(FoodGroup.isTouching(player)){
