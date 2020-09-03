@@ -36,7 +36,7 @@ function setup() {
   camera.position.y=200;
   ground = createSprite(100,350,1200,10);
   ground.velocityX=-4;
-  ground.x=ground.width/2;
+  ground.x=ground.width/2-150;
   ground.visible=false;
   
   FoodGroup = new Group();
